@@ -1,0 +1,146 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+  position: relative;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.name {
+  background-color: #008374;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  transform: translate(-50%, 0%);
+  position: relative;
+  border-radius: 10px;
+}
+
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+.input {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid #009688;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+.input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .good {
+  color: orange;
+}
+.finish .bad {
+  color: red;
+}
+.lvls {
+  border: none;
+  padding: 2px;
+  font-size: 18px;
+  outline: none;
+  color: #009688;
+  cursor: pointer;
+}
+.game-instructions {
+  padding: 20px;
+  border: 1px dashed #777;
+}
+.game-instructions .game-span {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 20px;
+  color: #009688;
+  font-weight: bold;
+}
+.game-instructions .para {
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 1.6;
+}
